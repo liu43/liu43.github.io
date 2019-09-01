@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage" />
+    <meta name="author" content="kfckfckf" />
+    <title>Splitter</title>
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/jquery.easing.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Query Splitter</h1>
+        <p>Please copy the URL into the following text box and click "split".</p>
+        <div>
+            <form>
+                <textarea name="url" autofocus="true" class="form-control" rows="3"></textarea>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="sort" value="sort">Sort Alphabetically
+                    </label>
+                </div>
+                <p><input class="btn btn-default" type="button" value="Split" onclick="split(this.form)"></p>
+                <div id="output"></div>
+            </form>
+            <script type="text/javascript">
+                function split(form) {
+                    url = form.url.value;
+                    index = url.indexOf('?');
+                    if (index != -1)
+                        queryString = url.substring(index + 1);
+                    result = "";
+                    quries = "";
+                    if (index != -1) {
+                        if (queryString.indexOf("&") != -1) {
+                            queries = queryString.split("&");
+                            if (form.sort.checked == true)
+                                queries.sort();
+                            i = 0;
+                            for (key in queries) {
+                                value = queries[key];
+                                if (value.startsWith("#038;"))
+                                    value = value.substring(5);
+                                if (i % 2 == 0)
+                                    result += "<tr><td>" + value.substring(0, value.indexOf('=')) + "</td><td>" + value.substring(value.indexOf('=') + 1) + "</td></tr>";
+                                else
+                                    result += "<tr><td>" + value.substring(0, value.indexOf('=')) + "</td><td>" + value.substring(value.indexOf('=') + 1) + "</td></tr>";
+                                i++;
+                            }
+                        }
+                        else {
+                            if (queryString.indexOf("=") != -1)
+                                result = "<tr><td>" + queryString.substring(0, queryString.indexOf('=')) + "</td><td>" + queryString.substring(queryString.indexOf('=') + 1) + "</td></tr>";
+                        }
+                    }
+                    if (result != "") {
+                        result = result.substring(0, result.length - 1);
+                    }
+                    else {
+                        document.getElementById("output").innerHTML = "<h3>No Query</h3>";
+                        return;
+                    }
+                    document.getElementById("output").innerHTML = "<h3>The parameters and their values</h3><table class='table table-hover'><thead><tr><th>Name</th><th>Value</th></tr></thead><tbody>" + result + "</tbody></table>";
+                }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
