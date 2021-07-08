@@ -8,69 +8,71 @@
     <meta name="author" content="kfckfckf" />
     <link rel="shortcut icon" href="./img/icon.ico" />
     <title>Shuangming Chai's Homepage</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.130.0"></script>
+    
     <link rel="stylesheet" href="css/document.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/651d424ef5.js" crossorigin="anonymous"></script>
 </head>
-<body id="page-top" data-spy="scroll" data-target="#sideNav">
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" style="background-image: linear-gradient(#f5f5f5,#eee 100%)" id="sideNav">
-        <a class="navbar-brand" href="#">
-            <span class="d-block d-lg-none">Shuangming Chai</span>
-            <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/header.jpg" alt="">
-            </span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#biography">Biography</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#interests">Research Interests</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#publication">Publication</a>
-                </li>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#sideNav" data-bs-offset="0">
+    <nav class="navbar navbar-expand-md navbar-light bg-light bg-gradient fixed-top" id="sideNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span class="d-block d-lg-none">Shuangming Chai</span>
+                <span class="d-none d-lg-block">
+                    <img class="img-fluid img-profile rounded-circle img-thumbnail shadow" src="img/header.jpg" alt="">
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto fw-bolder">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#biography">Biography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interests">Research Interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publication">Publication</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="list-inline h3 d-lg-block d-none">
+                <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=VNCW4DwAAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.researchgate.net/profile/Shuangming_Chai" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
+                <li class="list-inline-item"><a itemprop="sameAs" content="https://orcid.org/0000-0002-9475-7906" href="https://orcid.org/0000-0002-9475-7906" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;" title="ORCID"><i class="fab fa-orcid"></i></a></li>
+                <li class="list-inline-item"><a href="https://github.com/kfckfckf" title="GitHub"><i class="fab fa-github"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/shuangmingchai/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
             </ul>
+            <span class="d-none d-lg-block text-muted">&copy;2021 <a class="text-decoration-none" href="http://kfckfckf.github.io">Shuangming Chai</a></span>
+            <span class="d-none d-lg-block text-muted">Last update: July 8, 2021</span>
         </div>
-        <ul class="list-inline h3 d-lg-block d-none">
-            <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=VNCW4DwAAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.researchgate.net/profile/Shuangming_Chai" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
-            <li class="list-inline-item"><a itemprop="sameAs" content="https://orcid.org/0000-0002-9475-7906" href="https://orcid.org/0000-0002-9475-7906" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;" title="ORCID"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em" alt="ORCID iD icon"></a></li>
-            <li class="list-inline-item"><a href="https://github.com/kfckfckf" title="GitHub"><i class="fab fa-github"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/shuangmingchai/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-        <span class="d-none d-lg-block">&copy;2020 <a href="http://kfckfckf.github.io">Shuangming Chai</a></span>
-        <span class="d-none d-lg-block">Last update: July 20, 2020</span>
     </nav>
     <div class="container-fluid">
         <section id="about" class="p-lg-5 p-3">
-            <h2 class="media-heading mb-3">Shuangming Chai (<span lang="zh-cmn-hans-cn">&#26612;&#21452;&#26126;</span>)</h2>
+            <h2 class="display-6">Shuangming Chai (<span lang="zh-cmn-hans-cn">&#26612;&#21452;&#26126;</span>)</h2>
             <span class="d-block float-md-left d-lg-none p-3">
-                <img class="img-fluid img-profile rounded-circle img-thumbnail" width="200px" src="img/header.jpg" alt="">
+                <img class="img-fluid img-profile rounded-circle img-thumbnail shadow" width="200px" src="img/header.jpg" alt="">
             </span>
-            <p><strong>Email</strong>: kfckfckf(AT)mail.ustc.edu.cn</p>
+            <p class="lead"><strong>Email</strong>: kfckfckf(AT)mail.ustc.edu.cn</p>
             <ul class="list-inline h3 d-lg-none d-block">
                 <li class="list-inline-item"><a href="https://scholar.google.com/citations?user=VNCW4DwAAAAJ" title="Google Scholar"><i class="fab fa-google"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.researchgate.net/profile/Shuangming_Chai" title="ResearchGate"><i class="fab fa-researchgate"></i></a></li>
-                <li class="list-inline-item"><a itemprop="sameAs" content="https://orcid.org/0000-0002-9475-7906" href="https://orcid.org/0000-0002-9475-7906" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;" title="ORCID"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em" alt="ORCID iD icon"></a></li>
+                <li class="list-inline-item"><a itemprop="sameAs" content="https://orcid.org/0000-0002-9475-7906" href="https://orcid.org/0000-0002-9475-7906" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;" title="ORCID"><i class="fab fa-orcid"></i></a></li>
                 <li class="list-inline-item"><a href="https://github.com/kfckfckf" title="GitHub"><i class="fab fa-github"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.linkedin.com/in/shuangmingchai/" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </section>
         <section id="biography" class="p-lg-5 p-3">
             <h3 class="mb-3">Biography</h3>
-            <p>Shuangming Chai is currently working at <a href="http://www.shining3d.com/">Shining 3D Tech Co., Ltd.</a> as an algorithm engineer.
-            He received a PhD degree in Computational Mathematics in 2019 from <a href="https://www.ustc.edu.cn/">University of Science and Technology of China</a>, supervised by <a href="http://staff.ustc.edu.cn/~lgliu">Prof. Ligang Liu</a> and <a href="http://staff.ustc.edu.cn/~fuxm">Dr. Xiao-Ming Fu</a>. He received a BSc degree in 2014 from University of Science and Technology of China. He worked in Microsoft Research Asia as an intern from July 2013 to May 2014, mentored by <a href="https://xueyuhanlang.github.io/">Dr. Yang Liu</a>.</p>
+            <p>Shuangming Chai is currently an algorithm engineer at <a class="text-decoration-none" href="http://www.shining3d.com/">Shining 3D Tech Co., Ltd.</a>
+            He received a PhD degree in Computational Mathematics in 2019 from <a class="text-decoration-none" href="https://www.ustc.edu.cn/">University of Science and Technology of China</a>, supervised by <a class="text-decoration-none" href="http://staff.ustc.edu.cn/~lgliu">Prof. Ligang Liu</a> and <a class="text-decoration-none" href="http://staff.ustc.edu.cn/~fuxm">Dr. Xiao-Ming Fu</a>. He received a BSc degree in Information and Computing Science in 2014 from University of Science and Technology of China. He worked at Microsoft Research Asia as an intern from July 2013 to May 2014, mentored by <a class="text-decoration-none" href="https://xueyuhanlang.github.io/">Dr. Yang Liu</a>.</p>
         </section>
         <section id="interests" class="p-lg-5 p-3">
             <h3 class="mb-3">Research Interests</h3>
@@ -78,31 +80,74 @@
         </section>
         <section id="publication" class="p-lg-5 p-3">
             <h3 class="mb-3">Publications</h3>
-            <ul class="list-group">
-            	<li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/robustatlas.png" alt="Robust atlas">
-                        <div class="media-body">
-                            <h5>Robust atlas generation via angle-based segmentation</h5>
-                            <p>
+            <div class="d-grid gap-3">
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/quadlayout.png" alt="Quad layout">
+                        <div class="card-body">
+                            <h5 class="card-title">Quad meshing with coarse layouts for planar domains</h5>
+                            <p class="card-text">
+                                Chi Zhang, Shuangming Chai, Ligang Liu, and Xiao-Ming Fu.<br>
+                                Computer-Aided Design (SPM), 2021, 140: 103084.
+                            </p>
+                            <div class="btn-group">
+                                <a class="btn btn-outline-primary" href="https://rec.ustc.edu.cn/share/671127a0-dd29-11eb-8844-eff549b50054">Paper <i class="fa fa-external-link"></i></a>
+                                <div class="btn-group">
+                                    <button id="btnsuppl" type="button" class="btn btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Supplementary</button>
+                                    <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <li><a class="dropdown-item disabled" href="#">Slides (coming soon) <i class="fa fa-external-link"></i></a></li>
+                                        <li><a class="dropdown-item" href="https://rec.ustc.edu.cn/share/8081ab10-dd29-11eb-b5e1-5fc36251b03b">Code <i class="fa fa-external-link"></i></a></li>
+                                        <li><a class="dropdown-item" href="https://rec.ustc.edu.cn/share/911f9e50-dd29-11eb-aa39-130e36684f1f">Exe <i class="fa fa-external-link"></i></a></li>
+                                        <li><a class="dropdown-item" href="https://rec.ustc.edu.cn/share/76290170-dd29-11eb-8197-276eced7d045">Data <i class="fa fa-external-link"></i></a></li>
+                                        <li><a class="dropdown-item" href="https://rec.ustc.edu.cn/share/9d666eb0-dd29-11eb-b44e-f1734f8d7078">Suppl. <i class="fa fa-external-link"></i></a></li>
+                                    </ul>
+                                </div>
+                                <a class="btn btn-outline-primary" href="https://doi.org/10.1016/j.cad.2021.103084">DOI <i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/voting.png" alt="Voting">
+                        <div class="card-body">
+                            <h5 class="card-title">Voting for Distortion Points in Geometric Processing</h5>
+                            <p class="card-text">
+                                Shuangming Chai, Xiao-Ming Fu, and Ligang Liu.<br>
+                                IEEE Transactions on Visualization and Computer Graphics, 2021, 27(4): 2469-2480.
+                            </p>
+                            <div class="btn-group">
+                                <a class="btn btn-outline-primary" href="https://drive.google.com/open?id=1AHUsRUpPL1eprt77qb8ud2LPqPk-DZyq">Paper <i class="fab fa-google-drive"></i></a>
+                                <a class="btn btn-outline-primary" href="http://arxiv.org/abs/1909.13066">Paper (arXiv) <i class="fa fa-external-link"></i></a>
+                                <a class="btn btn-outline-primary" href="https://github.com/kfckfckf/vdp">Code <i class="fab fa-github"></i></a>
+                                <a class="btn btn-outline-primary" href="https://doi.org/10.1109/TVCG.2019.2947420">DOI <i class="fa fa-external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/robustatlas.png" alt="Robust atlas">
+                        <div class="card-body">
+                            <h5 class="card-title">Robust atlas generation via angle-based segmentation</h5>
+                            <p class="card-text">
                                 Chi Zhang, Mao-Feng Xu, Shuangming Chai, and Xiao-Ming Fu.<br>
                                 Computer Aided Geometric Design (GMP), 2020, 79: 101854.
                             </p>
                             <div class="btn-group">
                                 <a class="btn btn-outline-primary" href="https://rec.ustc.edu.cn/share/fab8ec80-6298-11ea-9e6a-9bc5b468361b">Paper <i class="fa fa-external-link"></i></a>
                                 <a class="btn btn-outline-primary" href="https://rec.ustc.edu.cn/share/36398b40-a534-11ea-8347-c73008346249">Code <i class="fa fa-external-link"></i></a>
-                                <a class="btn btn-outline-primary disabled" href="">Slides <i class="fa fa-external-link"></i></a>
                                 <a class="btn btn-outline-primary" href="https://doi.org/10.1016/j.cagd.2020.101854">DOI <i class="fa fa-external-link"></i></a>
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/greedycut.png" alt="Greedy cut">
-                        <div class="media-body">
-                            <h5>Greedy cut construction for parameterizations</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/greedycut.png" alt="Greedy cut">
+                        <div class="card-body">
+                            <h5 class="card-title">Greedy cut construction for parameterizations</h5>
+                            <p class="card-text">
                                 Tianyu Zhu, Chunyang Ye, Shuangming Chai, and Xiao-Ming Fu.<br>
                                 Computer Graphics Forum (Eurographics), 2020, 39(2): 191-202.
                             </p>
@@ -114,31 +159,13 @@
                             </div>
                         </div>
                     </div>
-                </li>
-            	<li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/voting.png" alt="Voting">
-                        <div class="media-body">
-                            <h5>Voting for Distortion Points in Geometric Processing</h5>
-                            <p>
-                                Shuangming Chai, Xiao-Ming Fu, and Ligang Liu.<br>
-                                IEEE Transactions on Visualization and Computer Graphics, 2019.
-                            </p>
-                            <div class="btn-group">
-                                <a class="btn btn-outline-primary" href="https://drive.google.com/open?id=1AHUsRUpPL1eprt77qb8ud2LPqPk-DZyq">Paper <i class="fab fa-google-drive"></i></a>
-                                <a class="btn btn-outline-primary" href="http://arxiv.org/abs/1909.13066">Paper (arXiv) <i class="fa fa-external-link"></i></a>
-                                <a class="btn btn-outline-primary" href="https://github.com/kfckfckf/vdp">Code <i class="fab fa-github"></i></a>
-                                <a class="btn btn-outline-primary" href="https://doi.org/10.1109/TVCG.2019.2947420">DOI <i class="fa fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/atlas.png" alt="Atlas refinement">
-                        <div class="media-body">
-                            <h5>Atlas refinement with bounded packing efficiency</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/atlas.png" alt="Atlas refinement">
+                        <div class="card-body">
+                            <h5 class="card-title">Atlas refinement with bounded packing efficiency</h5>
+                            <p class="card-text">
                                 Hao-Yu Liu, Xiao-Ming Fu, Chunyang Ye, Shuangming Chai, and Ligang Liu.<br>
                                 ACM Transactions on Graphics (SIGGRAPH), 2019, 38(4): 33:1-33:13.
                             </p>
@@ -148,13 +175,13 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/remesh.png" alt="Error-bounded remeshing">
-                        <div class="media-body">
-                            <h5>Practical error-bounded remeshing by adaptive refinement</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/remesh.png" alt="Error-bounded remeshing">
+                        <div class="card-body">
+                            <h5 class="card-title">Practical error-bounded remeshing by adaptive refinement</h5>
+                            <p class="card-text">
                                 Xiao-Xiang Cheng, Xiao-Ming Fu, Chi Zhang, and Shuangming Chai.<br>
                                 Computers & Graphics (SMI), 2019, 82: 163-173.
                             </p>
@@ -167,13 +194,13 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/corres.jpg" alt="Compatible remeshing">
-                        <div class="media-body">
-                            <h5>Volume-enhanced compatible remeshing of 3D models</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/corres.jpg" alt="Compatible remeshing">
+                        <div class="card-body">
+                            <h5 class="card-title">Volume-enhanced compatible remeshing of 3D models</h5>
+                            <p class="card-text">
                                 Yang Yang, Xiao-Ming Fu, Shuangming Chai, Shi-Wei Xiao, and Ligang Liu.<br>
                                 IEEE Transactions on Visualization and Computer Graphics, 2019, 25(10): 2999-3010.
                             </p>
@@ -184,13 +211,13 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/cut.jpg" alt="Cut construction">
-                        <div class="media-body">
-                            <h5>Sphere-based cut construction for planar parameterizations</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/cut.jpg" alt="Cut construction">
+                        <div class="card-body">
+                            <h5 class="card-title">Sphere-based cut construction for planar parameterizations</h5>
+                            <p class="card-text">
                                 Shuangming Chai, Xiao-Ming Fu, Xin Hu, Yang Yang, and Ligang Liu.<br>
                                 Computers & Graphics (SMI), 2018, 74: 66-75.
                             </p>
@@ -203,16 +230,16 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/structopt.jpg" alt="Stress optimization">
-                        <div class="media-body">
-                            <h5>Stress-oriented structural optimization for frame structures</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/structopt.jpg" alt="Stress optimization">
+                        <div class="card-body">
+                            <h5 class="card-title">Stress-oriented structural optimization for frame structures</h5>
+                            <p class="card-text">
                                 Shuangming Chai, Baiyu Chen, Mengyu Ji, Zhouwang Yang, Manfred Lau, Xiao-Ming Fu, and Ligang Liu.<br>
                                 Graphical Models, 2018, 97: 80-88.<br>
-                                In 2017 International Conference on Virtual Reality and Visualization (Best paper award), Zhengzhou, China, 2017, pp. 115-120
+                                In ICVRV (Best paper award), Zhengzhou, China, 2017, pp. 115-120
                             </p>
                             <div class="btn-group">
                                 <a class="btn btn-outline-primary" href="http://staff.ustc.edu.cn/~fuxm/data/STSO.pdf">Paper <i class="far fa-file-pdf"></i></a>
@@ -222,13 +249,13 @@
                             </div>
                         </div>
                     </div>
-                </li>
-                <li class="list-group-item">
-                    <div class="media">
-                        <img class="d-flex mr-3" src="img/support-free.jpg" alt="Support-free structure">
-                        <div class="media-body">
-                            <h5>Computing interior support-free structure via hollow-to-fill construction</h5>
-                            <p>
+                </div>
+                <div class="card shadow">
+                    <div class="d-flex flex-column flex-md-row">
+                        <img class="img-fluid p-3 m-auto" src="img/support-free.jpg" alt="Support-free structure">
+                        <div class="card-body">
+                            <h5 class="card-title">Computing interior support-free structure via hollow-to-fill construction</h5>
+                            <p class="card-text">
                                 Yang Yang, Shuangming Chai, and Xiao-Ming Fu.<br>
                                 Computers & Graphics (CAD/Graphics), 2018, 70: 148-156.
                             </p>
@@ -240,10 +267,47 @@
                             </div>
                         </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
+        <footer class="d-block d-lg-none text-muted py-3 text-center">
+            <p class="mb-1">&copy;2021 <a class="text-decoration-none" href="http://kfckfckf.github.io">Shuangming Chai</a></p>
+            <p class="mb-0">Last update: July 8, 2021</p>
+        </footer>
     </div>
+    <script type="text/javascript">
+        const scene = new THREE.Scene();
+        const width = document.getElementById("sideNav").clientWidth - 1;
+        const height = document.getElementById("sideNav").clientHeight - 1;
+        const camera = new THREE.PerspectiveCamera( 45, width / height, 0.1, 1000 );
+
+        const renderer = new THREE.WebGLRenderer( { antialias: true } );
+        renderer.setSize( width, height );
+        renderer.domElement.style.position = "absolute";
+        renderer.domElement.style.zIndex = -1;
+        renderer.domElement.className = "d-none d-lg-block"
+        document.getElementById("sideNav").appendChild( renderer.domElement );
+
+        const geometry = new THREE.IcosahedronGeometry(1, 1);
+        const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+        const wireMaterial = new THREE.MeshBasicMaterial( { color: 0xEEEEEE, wireframe: true } );
+        const cube = new THREE.Mesh( geometry, wireMaterial );
+        scene.add( cube );
+        scene.background = new THREE.Color( 0xF8F9FA );
+
+        camera.position.z = 5;
+
+        const animate = function () {
+            requestAnimationFrame( animate );
+
+            cube.rotation.x += 0.0041;
+            cube.rotation.y += 0.0053;
+        
+            renderer.render( scene, camera );
+        };
+
+        animate();
+    </script>
 </body>
 
 </html>

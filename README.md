@@ -1,3 +1,3 @@
 # kfckfckf.github.io
 
-Personal homepage v0.1
+Personal homepage v0.2

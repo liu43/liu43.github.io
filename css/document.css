@@ -14,7 +14,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
+  font-variant-caps: small-caps;
 }
 
 section {
@@ -22,20 +22,21 @@ section {
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
+  font-variant-caps: small-caps;
 }
-
+#sideNav {
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
 @media (min-width: 992px) {
   #sideNav {
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
     width: 17rem;
     height: 100vh;
+    box-shadow: 0.5rem 0 1rem rgb(0 0 0 / 5%), inset -1px 0 0 rgb(0 0 0 / 15%);
+  }
+  #sideNav .container-fluid {
+    flex-direction: column;
+    height: 100%;
   }
   #sideNav .navbar-brand {
     display: flex;
@@ -45,7 +46,6 @@ section {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -64,27 +64,4 @@ section {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
-}
-
-@media (min-width: 992px) {
-  .footer {
-    height: 60px;
-    line-height: 60px;
-    background-color: #f5f5f5;
-    position: fixed;
-    width: 100%;
-    bottom: 0
-  }
-}
-
-.media {
-  flex-wrap: wrap;
-}
-
-.media .btn-group {
-  flex-wrap: wrap;
-}
-
-.media-body {
-  min-width: 200px;
 }
